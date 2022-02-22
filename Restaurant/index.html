@@ -24,16 +24,16 @@
             <a href="#home" class="nav-link"><h4>About</h4></a>
           </li>
           <li class="nav-item">
-            <a href="#explore-head-section" class="nav-link"><h4>Location</h4></a>
+            <a href="#location-head-section" class="nav-link"><h4>Location</h4></a>
           </li>
           <li class="nav-item">
-            <a href="#create-head-section" class="nav-link"><h4>Menu</h4></a>
+            <a href="#menu-head-section" class="nav-link"><h4>Menu</h4></a>
           </li>
           <li class="nav-item">
-            <a href="#share-head-section" class="nav-link"><h4></h4></a>
+            <a href="#feedback-head-section" class="nav-link"><h4></h4></a>
           </li>
           <li class="nav-item">
-            <a href="#share-head-section" class="nav-link"><h4>Feedback</h4></a>
+            <a href="#feedback-head-section" class="nav-link"><h4>Feedback</h4></a>
           </li>
 
         </ul>
@@ -41,7 +41,7 @@
     </div>
   </nav>
 
-  <!-- HOME SECTION -->
+
   <header id="home-section">
     <div class="dark-overlay">
       <div class="home-inner container">
@@ -85,8 +85,8 @@
     </div>
   </header>
 
-  <!-- EXPLORE HEAD -->
-  <section id="explore-head-section" >
+
+  <section id="location-head-section" >
     <div class="container">
       <div class="row">
         <div class="col text-center py-5">
@@ -128,10 +128,8 @@
     </div>
   </section>
 
-  <!-- EXPLORE SECTION -->
   
-  <!-- CREATE HEAD -->
-  <section id="create-head-section" >
+  <section id="menu-head-section" >
     <div class="container">
       <div class="row">
         <div class="col text-center py-5">
@@ -145,8 +143,8 @@
     </div>
   </section>
 
-  <!-- CREATE SECTION -->
-  <section id="create-section" class="bg-primary">
+ 
+  <section id="menu-section" class="bg-primary">
 
     <div class="container-fluid">
       <!-- 12 / 3 => ech col 4 in size -->
@@ -228,8 +226,8 @@
 
   </section>
 
-  <!-- SHARE HEAD -->
-  <section id="share-head-section" class="bisque">
+ 
+  <section id="feedback-head-section" class="bisque">
     <div class="container">
       <div class="row">
         <div class="col text-center py-5">
@@ -242,8 +240,8 @@
     </div>
   </section>
 
-  <!-- SHARE SECTION -->
-  <section id="share-section" class="bisque">
+ 
+  <section id="feedback-section" class="bisque">
     <div class="container form-container mt-5">
      <center> <h1>Feedback Form</h1></center>
       <form action="/registration" method="post" class="form-validate" novalidate>
@@ -362,35 +360,6 @@
  </script>
 
 
-  <script>
-    // Get the current year for the copyright
-    $('#year').text(new Date().getFullYear());
-
-    // Init Scrollspy
-    $('body').scrollspy({ target: '#main-nav' });
-
-    // Smooth Scrolling
-    $("#main-nav a").on('click', function (event) {
-      if (this.hash !== "") {
-        event.preventDefault();
-
-        const hash = this.hash;
-
-        $('html, body').animate({
-          scrollTop: $(hash).offset().top
-        }, 800, function () {
-
-          window.location.hash = hash;
-        });
-      }
-    });
-
-
-    var dropdownElementList = [].slice.call(document.querySelectorAll('.dropdown-toggle'))
-var dropdownList = dropdownElementList.map(function (dropdownToggleEl) {
-  return new bootstrap.Dropdown(dropdownToggleEl)
-})
-  </script>
-</body>
+ </body>
 
 </html>
