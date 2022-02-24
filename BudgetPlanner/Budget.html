@@ -15,7 +15,7 @@
 </head>
 
 <body data-spy="scroll" data-target="#main-nav" id="home">
-    <nav class="navbar navbar-expand-sm bg-dark navbar-dark fixed-top" id="main-nav">
+    <nav class="navbar navbar-expand-sm rgb(38, 34, 48) navbar-dark fixed-top" id="main-nav">
         <div class="container">
             <a href="" class="navbar-brand">
                 <h1>My Budget Planning App</h1>
@@ -38,9 +38,9 @@
 
     </header>
 
-    <section id="explore-head-section">
+    <section id="Budget-head-section">
         <br />
-        <div class="container">
+        <div class="container"> 
 
             <div class="row">
                 <div class="col-lg-4">
@@ -63,7 +63,7 @@
 
 
                 <div class="col-md-7">
-                    <!-- app info -->
+                 
                     <div class="row my-3">
                         
                         <div class="col-4 text-center mb-2">
@@ -100,7 +100,7 @@
                                     <div class="col-md-16">
                                         <label for="firstName">Enter Your Expense</label>
                                         <input type="text" id="expenseName" name="expenseName" class="form-control"
-                                            required minlength="3" maxlength="10"> <br />
+                                            required minlength="3" maxlength="50"> <br />
                                         <label for="firstName">Enter Your Expense Amount</label>
                                         <input type="text" id="expenseAmt" name="expenseAmt" class="form-control"
                                             required minlength="3" maxlength="10"> <br />
@@ -141,9 +141,6 @@
 
 
     </section>
-
-
-
 
     <!-- FOOTER -->
     <footer id="main-footer" class="bisque">
@@ -203,40 +200,7 @@
     <script src="js/budget.js"></script>
     <script>
 
-
-
-    </script>
-
-
-    <script>
-        // Get the current year for the copyright
-        $('#year').text(new Date().getFullYear());
-
-        // Init Scrollspy
-        $('body').scrollspy({ target: '#main-nav' });
-
-        // Smooth Scrolling
-        $("#main-nav a").on('click', function (event) {
-            if (this.hash !== "") {
-                event.preventDefault();
-
-                const hash = this.hash;
-
-                $('html, body').animate({
-                    scrollTop: $(hash).offset().top
-                }, 800, function () {
-
-                    window.location.hash = hash;
-                });
-            }
-        });
-
-
-        var dropdownElementList = [].slice.call(document.querySelectorAll('.dropdown-toggle'))
-        var dropdownList = dropdownElementList.map(function (dropdownToggleEl) {
-            return new bootstrap.Dropdown(dropdownToggleEl)
-        })
-    </script>
+ 
 </body>
 
 </html>

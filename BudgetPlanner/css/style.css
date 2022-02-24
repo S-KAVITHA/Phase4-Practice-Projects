@@ -1,15 +1,15 @@
 body {
-  background: #333;
+  background: rgb(38, 34, 48);
   color: #fff;
 }
 
 .navbar {
-  border-bottom: #008ed6 3px solid;
+  border-bottom: #ac8a2c 3px solid;
   opacity: 0.8;
 }
 
 #home-section {
-  background: url(../img/home.jpg);
+ 
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
@@ -22,7 +22,7 @@ body {
   left: 0;
   width: 100%;
   min-height: 200px;
-  background: rgba(0, 0, 0, 0.7);
+  background: rgba(9, 3, 15, 0.7);
 }
 
 #home-section .home-inner {
@@ -42,7 +42,7 @@ body {
 }
 
 #explore-head-section {
-  background: url(../img/home.jpg);
+  
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
@@ -80,4 +80,9 @@ body {
 p {
   font-size: 25px;
   color: bisque;
+}
+
+#Budget-head-section{
+  background: url('https://media.gettyimages.com/photos/macro-coins-stack-picture-id1033407190?k=20&m=1033407190&s=612x612&w=0&h=8qRVusqKOO7mSldpvQs53FfnnupipRKPleCzIZofRnU=');
+  background-color: rgb(71, 76, 76);
 }
