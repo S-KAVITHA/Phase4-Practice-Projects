@@ -75,6 +75,7 @@ body {
 .form-container{
   border: 2px solid green;
   padding: 40px;
+  
 }
 
 p {
@@ -83,6 +84,14 @@ p {
 }
 
 #Budget-head-section{
-  background: url('https://media.gettyimages.com/photos/macro-coins-stack-picture-id1033407190?k=20&m=1033407190&s=612x612&w=0&h=8qRVusqKOO7mSldpvQs53FfnnupipRKPleCzIZofRnU=');
+ /* background: url('https://media.gettyimages.com/photos/macro-coins-stack-picture-id1033407190?k=20&m=1033407190&s=612x612&w=0&h=8qRVusqKOO7mSldpvQs53FfnnupipRKPleCzIZofRnU=');*/
+ background-image: url(/img/budget.jpg);
+ background-repeat: no-repeat;
+background-size: 100% 100%;
   background-color: rgb(71, 76, 76);
+  height: 1080px;
+}
+
+#exprow{
+margin-top: 10px;
 }
